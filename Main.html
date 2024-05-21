@@ -6,12 +6,16 @@
     <title>Furniture Store</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="maincss.css">
 </head>
 <body>
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">JCKame Furniture</a>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="Images/LOGO.jpg" alt="JCKame Furniture Logo" class="logo-img">
+            JCKame Furniture
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,39 +70,50 @@
     </nav>
 
     <section class="banner">
-        <img src="https://via.placeholder.com/1200x400" class="img-fluid" alt="Banner Image">
+        <img src="Images/ADS.jpg" class="img-fluid" alt="Banner Image">
     </section>
+
+    <section class="text">
+        <div class="row">
+            <div class="col">
+                <h2>Welcome to JCKAME Furniture Store</h2>
+                <p>Discover the perfect blend of style and comfort for your home.</p>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Products Section -->
     <section class="container my-5">
         <div class="row">
             <div class="col-md-4 product">
                 <div class="card">
-                    <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Product 1">
+                    <img src="Images/Livingroom.svg" class="card-img-top" alt="Product ">
                     <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Description of product 1.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Livingroom</h5>
+                        <p class="card-text">"Enrich Your Living Space: Wooden Elegance for Every Corner."</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 product">
                 <div class="card">
-                    <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Product 2">
+                    <img src="Images/Dining.svg" class="card-img-top" alt="Product ">
                     <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Description of product 2.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Diningroom</h5>
+                        <p class="card-text">"Gather, Feast, Cherish: Where Every Bite Tells a Story."</p>
+                        <a href="#" class="btn btn-primary">Exlpore</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 product">
                 <div class="card">
-                    <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Product 3">
+                    <img src="Images/Bedroom.svg" class="card-img-top" alt="Product ">
                     <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Description of product 3.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <h5 class="card-title">Bedroom</h5>
+                        <p class="card-text">"Where Comfort Meets Style: Your Bedroom, Your Sanctuary."</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
                     </div>
                 </div>
             </div>
@@ -107,10 +122,14 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Furniture Store. All rights reserved.</p>
+        <div class="footercontainer">
+            <p>&copy; 2024 JCKAME FURNITURE SHOP. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> | <a href="#">Return & Exchange Policy</a></p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            </div>
         </div>
     </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
