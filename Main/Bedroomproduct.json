@@ -1,0 +1,41 @@
+
+[{
+    "id":1,
+    "name": "BedFrame Design",
+    "description":"Crafted hardwoods",
+    "price": 200, 
+    "image":"ProductImg/bd1.jpg"
+    
+},
+
+{
+    "id":2,
+    "name": "Bedroom Table Design",
+    "description":"Crafted from hardwoods",
+    "price": 200, 
+    "image":"ProductImg/bdt1.jpg"
+    
+},
+
+
+{
+    "id":3,
+    "name": "Double Deck Design",
+    "price": 200, 
+    "description":"Crafted hardwoods",
+    "image":"ProductImg/bd2.jpg"
+    
+},
+
+    
+{
+    "id":4,
+    "name": "Cabinet",
+    "description":"Crafted hardwoods",
+    "price": 200, 
+    "image":"ProductImg/bdc1.jpg"
+    
+}
+
+
+]

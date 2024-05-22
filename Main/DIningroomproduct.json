@@ -1,0 +1,41 @@
+
+[{
+    "id":1,
+    "name": "Dining Table Design 1",
+    "description":"Crafted hardwoods",
+    "price": 200, 
+    "image":"ProductImg/Dn1.jpg"
+    
+},
+
+{
+    "id":2,
+    "name": "Dining Table Design 1",
+    "description":"Crafted from hardwoods",
+    "price": 200, 
+    "image":"ProductImg/DN2.jpg"
+    
+},
+
+
+{
+    "id":3,
+    "name": "Dining Table Design 1",
+    "price": 200, 
+    "description":"Crafted hardwoods",
+    "image":"ProductImg/bd2.jpg"
+    
+},
+
+    
+{
+    "id":4,
+    "name": "Dining Table Design 1",
+    "description":"Crafted hardwoods",
+    "price": 200, 
+    "image":"ProductImg/dn4.jpg"
+    
+}
+
+
+]

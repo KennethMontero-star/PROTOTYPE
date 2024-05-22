@@ -1,0 +1,41 @@
+
+[{
+    "id":1,
+    "name": "Chair Design 1",
+    "description":"Crafted hardwoods",
+    "price": 200, 
+    "image":"ProductImg/living-room-chairs1.jpg"
+    
+},
+
+{
+    "id":2,
+    "name": "Sofa Design 1",
+    "description":"Crafted from hardwoods",
+    "price": 200, 
+    "image":"ProductImg/sofa1.png"
+    
+},
+
+
+{
+    "id":3,
+    "name": "Center Table Design 1",
+    "price": 200, 
+    "description":"Crafted hardwoods",
+    "image":"ProductImg/ct1.jpg"
+    
+},
+
+    
+{
+    "id":4,
+    "name": "Sofa Design 1",
+    "description":"Crafted hardwoods",
+    "price": 200, 
+    "image":"ProductImg/cb1.jpg"
+    
+}
+
+
+]

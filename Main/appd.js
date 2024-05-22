@@ -16,10 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const addDataToHTML = () => {
-        // remove data default from HTML
-
         // add new data
-        if (products.length > 0) { // if has data
+        if (products.length > 0) {
             products.forEach(product => {
                 let newProduct = document.createElement('div');
                 newProduct.dataset.id = product.id;
@@ -27,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 newProduct.innerHTML =
                     `<img src="${product.image}" alt="">
                     <h2>${product.name}</h2>
+                    <h2>${product.description}</h2>
                     <div class="price">Php${product.price}</div>
                     <button class="addCart">Add To Cart</button>`;
                 listProductHTML.appendChild(newProduct);
@@ -55,8 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 quantity: 1
             });
         } else {
-            cart[positionThisProductInCart].quantity = cart[positionThisProductInCart].quantity + 1;
+            cart[positionThisProductInCart].quantity++;
         }
+        alert('Product added to cart!');
         addCartToHTML();
         addCartToMemory();
     };
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let totalQuantity = 0;
         if (cart.length > 0) {
             cart.forEach(item => {
-                totalQuantity = totalQuantity + item.quantity;
+                totalQuantity += item.quantity;
                 let newItem = document.createElement('div');
                 newItem.classList.add('item');
                 newItem.dataset.id = item.product_id;
@@ -80,18 +80,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 listCartHTML.appendChild(newItem);
                 newItem.innerHTML = `
                 <div class="image">
-                        <img src="${info.image}">
-                    </div>
-                    <div class="name">
+                    <img src="${info.image}">
+                </div>
+                <div class="name">
                     ${info.name}
-                    </div>
-                    <div class="totalPrice">$${info.price * item.quantity}</div>
-                    <div class="quantity">
-                        <span class="minus"><</span>
-                        <span>${item.quantity}</span>
-                        <span class="plus">></span>
-                    </div>
-                `;
+                </div>
+                <div class="totalPrice">Php${info.price * item.quantity}</div>
+                <div class="quantity">
+                    <span class="minus"><</span>
+                    <span>${item.quantity}</span>
+                    <span class="plus">></span>
+                </div>`;
             });
         }
         iconCartSpan.innerText = totalQuantity;
@@ -101,10 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let positionClick = event.target;
         if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
             let product_id = positionClick.parentElement.parentElement.dataset.id;
-            let type = 'minus';
-            if (positionClick.classList.contains('plus')) {
-                type = 'plus';
-            }
+            let type = positionClick.classList.contains('plus') ? 'plus' : 'minus';
             changeQuantityCart(product_id, type);
         }
     });
@@ -112,17 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const changeQuantityCart = (product_id, type) => {
         let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
         if (positionItemInCart >= 0) {
-            let info = cart[positionItemInCart];
             switch (type) {
                 case 'plus':
-                    cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1;
+                    cart[positionItemInCart].quantity++;
+                    alert('Increased product quantity in cart!');
                     break;
                 default:
-                    let changeQuantity = cart[positionItemInCart].quantity - 1;
-                    if (changeQuantity > 0) {
-                        cart[positionItemInCart].quantity = changeQuantity;
+                    if (cart[positionItemInCart].quantity > 1) {
+                        cart[positionItemInCart].quantity--;
+                        alert('Decreased product quantity in cart!');
                     } else {
                         cart.splice(positionItemInCart, 1);
+                        alert('Product removed from cart!');
                     }
                     break;
             }
@@ -133,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const initApp = () => {
         // get data product
-        fetch('product.json')
+        fetch('Diningroomproduct.json')
             .then(response => response.json())
             .then(data => {
                 products = data;
