@@ -53,16 +53,13 @@
     height: 100px; 
     margin-right: 10px;
 }
-.container-my-5{
-    background-color: #d35400;
-}
 .container
 /* Product Section */
 .product {
     margin-bottom: 30px;
 }
 .card {
-    border-radius: 20px; 
+    border-radius:  20px; 
 }
 .btn-primary{
     font-family: 'Roboto', sans-serif;
@@ -77,6 +74,13 @@
     color: #FFFFFF;
 }
 .text{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+.Pcontainer-my-5{
     font-family: 'Roboto', sans-serif;
     padding-top: 10px;
     text-align: center;

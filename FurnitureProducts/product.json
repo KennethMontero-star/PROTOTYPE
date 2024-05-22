@@ -1,0 +1,73 @@
+
+[{
+    "id":1,
+    "name": "Chair Design 1",
+    "price": 200, 
+    "image":"ProductImg/living-room-chairs1.jpg"
+    
+},
+{
+    "id":2,
+    "name": "Chair Design 2",
+    "price": 200, 
+    "image":"ProductImg/chair3.jpg"
+    
+},
+{
+    "id":3,
+    "name": "Chair Design 3",
+    "price": 200, 
+    "image":"ProductImg/png1.jpg"
+    
+},
+{
+    "id":4,
+    "name": "Sofa Design 1",
+    "price": 200, 
+    "image":"ProductImg/sofa1.png"
+    
+},
+{
+    "id":5,
+    "name": "Sofa Design 2",
+    "price": 200, 
+    "image":"ProductImg/sofa2.jpg"
+    
+},
+{
+    "id":6,
+    "name": "Sofa Design 3",
+    "price": 200, 
+    "image":"ProductImg/sofa3.jpg"
+    
+},
+{
+    "id":7,
+    "name": "Center Table Design 1",
+    "price": 200, 
+    "image":"ProductImg/ct1.jpg"
+    
+},
+{
+    "id":8,
+    "name": "Center Table Design 2",
+    "price": 200, 
+    "image":"ProductImg/ct2.jpg"
+    
+},
+{
+    "id":9,
+    "name": "Sofa Design 1",
+    "price": 200, 
+    "image":"ProductImg/cb1.jpg"
+    
+},
+{
+    "id":10,
+    "name": "Sofa Design 2",
+    "price": 200, 
+    "image":"ProductImg/cb2.jpg"
+    
+}
+
+]
